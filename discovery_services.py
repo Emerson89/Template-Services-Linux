@@ -3,7 +3,7 @@
 import subprocess
 import json
 
-services = subprocess.check_output("systemctl list-units --all --state enabled,running --type service | sed -n '/^[[:lower:]]/p'", shell=True)
+services = subprocess.check_output("systemctl list-units --all --state enabled,running --type service | awk '{print $1}' | sed -n '/^[[:lower:]]/p'", shell=True)
 services_decoded = services.decode("utf-8")
 
 list = []
