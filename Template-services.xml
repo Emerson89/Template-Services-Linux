@@ -48,7 +48,7 @@
                             <trigger_prototypes>
                                 <trigger_prototype>
                                     <expression>{last()}=1 or {last()}=3</expression>
-                                    <name>Service {#SERVICENAME } não está running</name>
+                                    <name>Service {#SERVICENAME} não está running</name>
                                     <priority>DISASTER</priority>
                                 </trigger_prototype>
                             </trigger_prototypes>
