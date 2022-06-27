@@ -13,3 +13,11 @@ Template para monitoramento de serviços Linux via discovery
 - Restart o zabbix-agent
 
 Ir em configurações, templates e clique em importar
+
+# Opção de filtragem de serviços
+
+Em *Discovery rules* selecione o *Discovery Services* clique em *Filters* insira o filtro desejado exemplo abaixo:
+
+```
+{#SERVICENAME} => matches => NOME-SERVIÇO
+```
